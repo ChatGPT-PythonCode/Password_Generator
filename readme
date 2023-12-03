@@ -1,0 +1,62 @@
+
+# Password Generator with Encryption
+
+This Python program provides a graphical user interface (GUI) for generating passwords and securely storing them in an encrypted file.
+
+## Features
+
+- Password generation with options for including special characters.
+- Password storage in an encrypted file using Fernet symmetric key encryption.
+- Ability to save generated passwords for different services.
+
+## Dependencies
+
+- Python (>=3.6)
+- Tkinter
+- cryptography
+
+## Installation
+
+1. Install the required dependencies:
+
+   ```bash
+   pip install tk cryptography
+   ```
+
+2. Download or clone the repository.
+
+3. Run the program:
+
+   ```bash
+   python password_generator.py
+   ```
+
+## Usage
+
+1. **Generate Password:**
+   - Click the "Generate Password" button to create a random password.
+   - Use the checkbox to include special characters in the generated password.
+
+2. **Save Password:**
+   - Click the "Save Password" button to store the generated password securely.
+   - Enter the service name when prompted.
+
+3. **Encrypting the Password File:**
+   - When saving a password, the program will prompt you to enter a password for encrypting the password file. Remember this password for future access.
+
+4. **Decrypting the Password File:**
+   - When running the program again, you will be asked to enter the password used for encryption. Ensure it matches the password used during the initial save.
+
+## Security Note
+
+- Ensure you remember the encryption password used to protect the password file. Losing this password may result in irreversible data loss.
+
+- This program uses Fernet symmetric key encryption, which is suitable for educational purposes. For stronger security, consider using more advanced encryption mechanisms.
+
+## Disclaimer
+
+This program is intended for educational purposes and may not provide sufficient security for critical applications. Use at your own risk.
+
+## License
+
+This project is licensed under the MIT License.
